@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="fansite.css">
+    <title>Document</title>
+</head>
+<header>
+    <div class="navbar" id="navbarplayer">
+        <div class="logo"><a href="index.html">HOME</a></div>
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="History">History</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="Players">Players</a></li>
+            <li><a href="Achievements">Achievements</a></li>
+        </ul>
+        <a href="#" class="action_btn">Get started</a>
+        <div class="toggle_btn">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="dropdown_menu">
+            <ul>
+                <li><a href="index.html">History</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="News.html">News</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="home.html" class="action_btn">Get started</a></li>
+            </ul>
+        </div>
+    </div>
+    </header>
+<body class="News">
+    <a class="twitter-timeline" href="https://twitter.com/BLACKLISTINTL?ref_src=twsrc%5Etfw">Tweets by BLACKLISTINTL</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+            toggleBtnIcon.classList = isOpen ? 'fas fa-times' : 'fas fa-bars';
+        }
+    </script>
+</body>
+</html>

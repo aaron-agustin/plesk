@@ -1,0 +1,599 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.web_body {
+    height: 100vh;
+    background-color: #000;
+    background-image: url('Image/MLBB_MPL_PH_S8_champion_BlacklistInternational.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: orange;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+    
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+.action_btn {
+    background-color: orange;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.action_btn:hover {
+    transform: scale(1.05);
+    color: #fff;
+}
+
+.action_btn:active {
+    transform: scale(0.95);
+}
+
+.dropdown_menu {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown_menu.open {
+    height: 220px;
+    z-index: 2;
+}
+
+.dropdown_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropdown_menu .action_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+@media (max-width: 2000px) {
+    .navbar .links,
+    .navbar .action_btn {
+        display: none;
+    }
+
+    .navbar .toggle_btn {
+        display: block;
+    }
+
+    .dropdown_menu {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+}
+
+.players_body {
+    
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(Image/blacklist\ background.webp);
+    background-blend-mode: multiply;
+    margin: 0px 0px;
+    margin-top: 100px;
+    background-color: #040202;
+}
+#bodysuce {
+    margin-top: Opx;
+    background-color: #040202;
+}
+
+
+
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+}
+
+.container .card {
+    position: relative;
+    width: 350px;
+    height: 300px;
+    background: #ffffffae;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(255, 255, 255, 0.1);
+    transition: 0.5s;
+}
+
+.container .card:hover {
+    height: 400px;
+}
+
+.container .card .imgBx {
+    position: absolute;
+    top: 20px;
+    width: 350px;
+    height: 220px;
+    background-color: #000;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.container .card:hover .imgBx {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+}
+
+.container .card .content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    padding: 0 30px;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    transition: O.5s;
+}
+
+.container .card:hover .content {
+    top: 130px;
+    height: 250px;
+}
+
+.container .card .content h2 {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: black;
+}
+
+.container .card .content p {
+    color: #000;
+    font-size: 0.8em;
+
+}
+
+
+.fa-square-instagram {
+    font-size: 15px;
+}
+
+.container .card .content a {
+    color: #000;
+}
+
+.mouse {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h3 {
+    color: whitesmoke;
+}
+#navbarplayer {
+    padding-left: 60px;
+}
+
+.body-history {
+    background: black;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+
+
+.container2 {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+
+@keyframes movedown {
+    0% {
+        opacity: 1;
+        transform: translate(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0px);
+    }
+
+}
+
+
+.container2:nth-child(1) {
+    animation-delay: 0s;
+
+}
+.container2:nth-child(2) {
+    animation-delay: 1s;
+    
+}
+.container2:nth-child(3) {
+    animation-delay: 2s;
+    
+}
+.container2:nth-child(4) {
+    animation-delay: 3s;
+    
+}
+.container2:nth-child(5) {
+    animation-delay: 4s;
+    
+}
+.container2:nth-child(6) {
+    animation-delay: 5s;
+    
+}
+.container2:nth-child(7) {
+    animation-delay: 6s;
+    
+}
+.container2:nth-child(8) {
+    animation-delay: 7s;
+    
+}
+
+
+
+.text-box {
+    padding: 20px 30px;
+    background: #fff;
+    position: relative;
+    border-radius: 6px;
+    font-size: 15px;
+
+}
+
+.left-container {
+    left: 0;
+
+}
+
+.right-container {
+    left: 50%;
+
+}
+
+.container2 img {
+    position: absolute;
+    width: 70px;
+    border-radius: 40%;
+    right: -35px;
+    top: 32px;
+    z-index: 10;
+}
+
+.right-container img {
+    left: -35px;
+
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 50%;
+    margin-left: -3px;
+    z-index: -1;
+    animation: moveline 7.3s linear forwards;
+}
+
+@keyframes moveline {
+    0%{
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+
+.text-box h2 {
+    font-weight: 600;
+}
+
+.text-box small {
+    display: inline-block;
+    margin-bottom: 15px;
+
+}
+
+.left-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #fff;
+    right: -14px;
+}
+
+.right-container-arrow {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #fff;
+    left: -14px;
+}
+
+@media screen and (max-width: 600px) {
+    .timeline {
+        margin: 50px auto;
+    }
+
+    .timeline::after {
+        left: 31px;
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
+     
+    .text-box {
+        font-size: 13px;
+    }
+
+    .text-box small {
+        margin-bottom: 10px;
+    }
+
+    .right-container {
+        left: 0;
+    }
+
+    .left-container img, .right-container img {
+        left: 10px;
+    }
+
+    .left-container-arrow, .right-container-arrow {
+        border-right: 15px solid #fff;
+        border-left: 0;
+        left: -15px;
+
+
+
+    }
+}
+
+iframe {
+   border-radius: 20px;
+   height: 300px;
+   width: 400px;
+   margin: 0;
+   padding: 0;
+   
+
+
+
+}
+
+.body-videos {
+    background-color: #000000a0;
+}
+
+.yh {
+    color: whitesmoke;
+    text-align: center;
+
+}
+
+.twitter-timeline {
+    margin: 40% 30%;
+    padding-bottom: 9%;
+    padding-top: 9%;
+}
+
+.News {
+    background-color: #000;
+}
+
+
+.body_contact {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    background-color: #4c0202da;
+    
+
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5), #b92b27), url(Image/MLBB_MPL_PH_S10_BlacklistInternational-62d508402fafc.webp);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+
+
+}
+
+form {
+    width: 90%;
+    max-width: 600px;
+  
+}
+
+.input-group {
+    margin-bottom: 30px;
+    position: relative;
+
+
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    font-size: 15px;
+
+}
+
+label {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text; 
+    transition: 0.5s;
+}
+
+button {
+    padding: 10px 0;
+    color: #fff;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label
+{
+    top: -35px;
+    font-size: 14px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.row .input-group {
+    flex-basis: 48%;
+
+}
+
+h3 {
+    font-size: 25px;
+}
+
+.large-icon {
+    font-size: 2rem;
+}

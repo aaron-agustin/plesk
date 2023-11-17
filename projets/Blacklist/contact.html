@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fansite.css">
+    <title>Contact us</title>
+</head>
+<body class="body_contact">
+    <header>
+        <div class="navbar" id="navbarplayer">
+            <div class="logo"><a href="index.html">HOME</a></div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="History">History</a></li>
+                <li><a href="About">About</a></li>
+                <li><a href="Players">Players</a></li>
+                <li><a href="Achievements">Achievements</a></li>
+            </ul>
+            <a href="#" class="action_btn">Get started</a>
+            <div class="toggle_btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="dropdown_menu">
+                <ul>
+                    <li><a href="index.html">History</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="players.html">Players</a></li>
+                    <li><a href="News.html">News</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="index.html" class="action_btn">Get started</a></li>
+                </ul>
+            </div>
+        </div>
+        </header>
+    <div class="hero">
+        
+    
+        <form>
+            <div class="row">
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label for="name"><i class="fa-solid fa-user"></i> Your Name</label>
+                   </div>
+                   <div class="input-group">
+                    <input type="text" id="number" required>
+                    <label for="number"><i class="fa-solid fa-phone"></i> Phone number</label>
+                   </div>
+            </div>
+           
+           <div class="input-group">
+            <input type="email" id="email" required>
+            <label for="email"><i class="fa-solid fa-envelope"></i> Email Id</label>
+           </div>
+           <div class="input-group">
+            <textarea  id="message"  rows="8" required></textarea>
+            <label for="message"><i class="fa-solid fa-comment"></i> Your message</label>
+           </div>
+           <button type="submit">SUBMIT <i class="fa-solid fa-paper-plane fa-bounce"></i> </button>
+          
+           
+        </form>
+    </div>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn');
+        const toggleBtnIcon = document.querySelector('.toggle_btn i');
+        const dropDownMenu = document.querySelector('.dropdown_menu');
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+            toggleBtnIcon.classList = isOpen ? 'fas fa-times' : 'fas fa-bars';
+        }
+    </script>
+
+</body>
+</html>
